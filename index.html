@@ -1,0 +1,53 @@
+  
+<!DOCTYPE html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="main.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,800;1,900&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+
+  <div class = "main_image_container">
+    <div class = "white_half"></div>
+      <div class = "bold_text">hi, i'm grace.</div>
+      <div class = "thin_text">(ps. I design for humans, not robots)</div>
+    <div class = "imagery">
+      <img class = "me" src="images/me.png" style='height: 100%; width: 100%; object-fit: cover; object-position: center;'/>
+    </div>
+  </div>
+
+  <div id="navbar">
+
+  <a href="index.html">HOME</a>
+  <a href="about_me.html">ABOUT ME</a>
+
+  </div>
+
+  
+
+    <div class="container"></div>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <!-- contentful apis-->
+    <script src="https://cdn.jsdelivr.net/npm/contentful@latest/dist/contentful.browser.min.js"></script>
+    <script>
+      var exports = {}; // quick fix because 'exports' is not defined in rich-text bundle below
+    </script>
+    <script src="https://unpkg.com/@contentful/rich-text-html-renderer@12.0.0/dist/rich-text-html-renderer.es5.js"></script>
+     <!-- mustache api-->
+    <script src="https://unpkg.com/mustache@latest"></script>
+    <script src="script.js"></script>
+    <script>
+      (function(){
+        app.initialize();
+        app.getAllEntries();
+      })();
+    </script>
+  </body>
+</html>
