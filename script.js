@@ -10,27 +10,35 @@ const app = {
     });
   },
 
-  // getEntry: function(entry) {
-  //   // fetch a particular project
-  //   app.client.getEntry(entry).then(project => {
-  //     const projectData = {
-  //       title: project.fields.title,
-  //       imageUrl: `http:${project.fields.image.fields.file.url}`,
-  //       imageTitle: project.fields.image.fields.title,
-  //       description: documentToHtmlString(project.fields.description)
-  //     };
-  //     // load the template for this item from a local file
-  //     fetch('projectPage.mustache')
-  //       .then(response => response.text())
-  //       .then(template => {
-  //         // render the template with the data
-  //         const rendered = Mustache.render(template, projectData);
-  //         // add the element to the container
-  //         $('.container').append(rendered);
-  //       }
-  //     );
-  //   });
-  // },
+  getEntry: function(entry) {
+    // fetch a particular project
+    app.client.getEntry(entry).then(project => {
+      const projectData = {
+        title: project.fields.projectName,
+        imageUrl: `http:${project.fields.projectPhoto.fields.file.url}`,
+        description: documentToHtmlString(project.fields.projectDescription),
+        problemStatement: documentToHtmlString(project.fields.problemStatement),
+        researchImage: `http:${project.fields.researchPhoto.fields.file.url}`,
+        research: documentToHtmlString(project.fields.research),
+        wireframeImage: `http:${project.fields.wireframePhoto.fields.file.url}`,
+        wireframeDescription: documentToHtmlString(project.fields.wireframes),
+        finalPhoto: `http:${project.fields.finishedProductPhoto.fields.file.url}`,
+        finalDescription: documentToHtmlString(project.fields.finishedProductDescription)
+
+
+      };
+      // load the template for this item from a local file
+      fetch('projectPage.mustache')
+        .then(response => response.text())
+        .then(template => {
+          // render the template with the data
+          const rendered = Mustache.render(template, projectData);
+          // add the element to the container
+          $('.container').append(rendered);
+        }
+      );
+    });
+  },
 
   getAllEntries: function() {
     // fetch all entries
