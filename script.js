@@ -16,6 +16,7 @@ const app = {
       const projectData = {
         title: project.fields.projectName,
         imageUrl: `http:${project.fields.projectPhoto.fields.file.url}`,
+        projectPageHeaderImage: `http:${project.fields.projectPageMainPhoto.fields.file.url}`,
         description: documentToHtmlString(project.fields.projectDescription),
         problemStatement: documentToHtmlString(project.fields.problemStatement),
         researchImage: `http:${project.fields.researchPhoto.fields.file.url}`,

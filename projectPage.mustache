@@ -1,45 +1,55 @@
   
-<div class="projectImage">
-  <img src={{imageUrl}} title={{title}} />
-</div>
-<div class="projectTitle">
-  {{ title }}
-</div>
-<div class="projectDescription">
-  {{! This variable needs triple brackets because it's actually html, not just a string}}
-  {{{ description }}}
-</div>
-<div class="problemStatement">
-  {{! This variable needs triple brackets because it's actually html, not just a string}}
-  {{{ problemStatement }}}
-</div>
 
-  
-<div class="researchImage">
-  <img src={{researchImage}} title={{title}}/>
-</div>
-  
- <div class="research">
-  {{! This variable needs triple brackets because it's actually html, not just a string}}
-  {{{ research }}}
-</div>
+<div class = "pageContainer">
 
-<div class="wireframeImage">
-  <img src={{wireframeImage}} title={{title}}/>
-</div>
 
- <div class="wireframeDescription">
-  {{! This variable needs triple brackets because it's actually html, not just a string}}
-  {{{ wireframeDescription }}}
-</div>
-  
-  <div class="finalPhoto">
-  <img src={{finalPhoto}} title={{title}}/>
-</div>
+  <div class="projectHeaderImage" >
 
- <div class="finalDescription">
-  {{! This variable needs triple brackets because it's actually html, not just a string}}
-  {{{ finalDescription }}}
+  <div class="projectTitle">
+    <h1> {{ title }} </h1>
+  </div>
+    <img src={{projectPageHeaderImage}} title={{title}} style='height: 100%; width: 100%; object-fit: cover; object-position: center;'/>
+  </div>
+
+
+    <div class="textBlockDescription">
+    {{! This variable needs triple brackets because it's actually html, not just a string}}
+    <div class = "text"> {{{ description }}}</div>
+  </div>
+
+  <div class="textBlock">
+    {{! This variable needs triple brackets because it's actually html, not just a string}}
+     <div class = "text">  {{{ problemStatement }}} </div>
+  </div>
+
+    
+  <div class="researchImage">
+    <img src={{researchImage}} title={{title}} style='height: 100%; width: 100%; object-fit: cover; object-position: center;'/>
+  </div>
+    
+   <div class="textBlock">
+    {{! This variable needs triple brackets because it's actually html, not just a string}}
+     <div class = "text"> {{{ research }}} </div>
+  </div>
+
+  <div class="wireframeImage">
+    <img src={{wireframeImage}} title={{title}} style='height: 100%; width: 100%; object-fit: cover; object-position: center;'/>
+  </div>
+
+   <div class="textBlock">
+    {{! This variable needs triple brackets because it's actually html, not just a string}}
+     <div class = "text"> {{{ wireframeDescription }}} </div>
+  </div>
+    
+    <div class="finalPhoto">
+    <img src={{finalPhoto}} title={{title}} style='height: 100%; width: 100%; object-fit: cover; object-position: center;'/>
+  </div>
+
+   <div class="textBlock">
+    {{! This variable needs triple brackets because it's actually html, not just a string}}
+     <div class = "text"> {{{ finalDescription }}} </div>
+  </div>
+
 </div>
   
 

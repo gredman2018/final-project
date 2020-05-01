@@ -41,11 +41,13 @@
   bottom: 0;
   left: 0;
   right: 0;
-  height: 99.2%;
+  height: auto;
   width: 100%;
   opacity: 0;
   transition: .3s ease;
-  background-color: #ff4f6f;
+  background-color: #eebf3a;
+  font-weight: bold;
+
 
 }
 
@@ -55,7 +57,7 @@
 
 .title {
   color: white;
-  font-size: 20px;
+  font-size: 100px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -65,14 +67,14 @@
   text-align: center;
   opacity: 100%;
   font-family: 'Poppins', sans-serif;
-  font-weight: medium;
+
 }
 
 /* Style the navbar */
 #navbar {
   overflow: hidden;
   background-color: #f8f6f2;
-  height: 30%;
+  height: 50%;
   width: 100vw;
   position: sticky;
 
@@ -84,18 +86,19 @@
   display: inline-block;
   color: #ef4b6f;
   text-align: center;
-  padding: 14px;
+  padding: 50px;
   text-decoration: none;
   font-family: 'Poppins', sans-serif;
   font-weight: 800;
-  font-size: 20px;
-  margin-left: 20px;
+  font-size: 80px;
+  margin-left: 50px;
+  margin-right: 100px;
 
 
 }
 
 #navbar a:hover {
-  text-shadow: 2px 2px 0 #eebf3a;
+  text-shadow: 4px 4px 0 #eebf3a;
 
 
 }
@@ -123,20 +126,30 @@
 	
 }
 
+.title_mobile{
+  visibility: hidden;
+display: none;
+}
+
 
 .bold_text{
 	z-index: 100;
-  	font-size: 100px;
+  	font-size: 400px;
   	width: 40%;
-  	line-height: 90px;
+  	line-height: 90%;
   	position: absolute;
   	font-family: 'Poppins', sans-serif;
   	font-weight: 800;
   	color: #ef4b6f;
-  	text-shadow: 5px 5px 0 #eebf3a;
-  	margin-top: 13%;
+  	text-shadow: 10px 10px 0 #eebf3a;
+/*  	margin-top: 13%;
   	margin-left: 13%;
-  	margin-bottom: 13%;
+  	margin-bottom: 13%;*/
+      top: 40%;
+  left: 32%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 
 
 
@@ -144,14 +157,434 @@
 
 .thin_text{
 	z-index: 100;
-  	font-size: 25px;
+  	font-size: 100px;
   	position: absolute;
   	top: 0;
   	font-family: 'Poppins', sans-serif;
   	color: #ef4b6f;
-  	margin-top: 28%;
-  	margin-left: 13%;
+      top:62%;
+  left: 25%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   	width: 25%;
-  	margin-bottom: 15%;
+
 
 }
+.pageContainer{
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+
+}
+
+
+
+
+.projectTitle{
+  color: white;
+  font-size: 800%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-weight: medium;
+}
+
+.textBlock{
+  height: auto;
+  min-height: 100vh;
+  width: 100vw;
+  background: #f8f6f2;
+    font-family: 'Poppins', sans-serif;
+    color: #4a4848;
+
+
+}
+
+.textBlockDescription{
+  height: 50vh;
+  width: 100vw;
+  background: #f8f6f2;
+  font-family: 'Poppins', sans-serif;
+    color: #4a4848;
+
+  
+
+}
+
+.about_me_title {
+  color: white;
+  font-size: 300px;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  opacity: 100%;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bolder;
+
+}
+
+.text{
+  margin: 8%;
+  font-size: 500%;
+    font-family: 'Poppins', sans-serif;
+
+
+}
+
+/* Page content */
+.content {
+  padding: 16px;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 60px;
+}
+
+.about_me_image{
+  width: 100vw;
+  height: 100vh;
+}
+
+@media only screen and (max-width: 1367px) {
+  .bold_text{
+    font-size: 100px;
+
+  }
+  .thin_text{
+    font-size: 50px;
+  }
+  }
+
+@media only screen and (max-width: 1025px) {
+
+  .container{
+  flex-direction:column;
+}
+
+#navbar a {
+
+  font-size: 30px;
+  margin-left: 10px;
+
+}
+
+
+
+.white_half{
+
+visibility: hidden;
+}
+
+.imagery{
+  visibility: hidden;
+}
+
+.me{
+visibility: hidden;}
+
+.bold_text{
+  z-index: 100;
+    font-size: 150px;
+    width: 60%;
+
+      top: 40%;
+  left: 55%;
+}
+
+.main_image_container{
+    width: 100vw;
+  height: 100vh;
+background-color: #f8f6f2;
+
+}
+
+
+.about_me_title{
+  font-size: 150px;
+}
+
+
+.thin_text{
+  z-index: 100;
+    font-size: 54px;
+    position: absolute;
+    top: 0;
+    font-family: 'Poppins', sans-serif;
+    color: #ef4b6f;
+      top:70%;
+      line-height: 55px;
+  left: 55%;
+  width: 60%;
+
+
+
+
+}
+.container img{
+  display: flex;
+  flex-direction:column;
+  flex-wrap: wrap;
+  width: 100vw;
+
+
+}
+.projectBlock{
+  display: flex;
+  object-fit: contain;
+  position: relative;
+  width: 100vw;
+
+
+}
+
+.title_mobile{
+  display: unset;
+  visibility: visible;
+  color: white;
+  font-size: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  opacity: 100%;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+}
+.overlay{
+    opacity: .4;
+    height: auto;
+
+}
+
+
+
+}
+@media only screen and (max-width: 813px) {
+  .title{
+      font-size: 40px;
+
+  }
+  .title_mobile{
+  visibility: visible;
+  color: white;
+  font-size: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  opacity: 100%;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+}
+
+.bold_text{
+  width: 100%;
+  z-index: 100;
+  font-size: 70px;
+   width: 60%;
+  top: 46%;
+  left: 50%;
+      text-shadow: 5px 5px 0 #eebf3a;
+
+}
+
+.thin_text{
+  z-index: 100;
+    font-size: 24px;
+    position: absolute;
+    top: 0;
+    font-family: 'Poppins', sans-serif;
+    color: #ef4b6f;
+      top:60%;
+      line-height: 25px;
+  left: 55%;
+  width: 70%;
+
+
+}
+
+#navbar {
+  overflow: hidden;
+  background-color: #f8f6f2;
+  height: 10%;
+  width: 100vw;
+}
+
+#navbar a {
+
+  font-size: 25px;
+  padding:0px;
+  padding-top: 5px;
+    padding-bottom: 5px;
+
+      margin-right: 0px;
+      margin-left:10px;
+}
+
+.projectTitle{
+        font-size: 40px;
+          top: 65%;
+  left: 50%;
+  line-height: 60px;
+
+}
+
+.text{
+  margin: 10%;
+  font-size: 20px;
+
+}
+
+.textBlockDescription{
+  height: auto;
+  width: 100vw;
+  background: #f8f6f2;
+  font-family: 'Poppins', sans-serif;
+    color: #4a4848;
+
+  
+
+}
+
+}
+@media only screen and (max-width: 376px) {
+  .title{
+      font-size: 40px;
+
+  }
+  .title_mobile{
+  visibility: visible;
+  color: white;
+  font-size: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  opacity: 100%;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+}
+
+.about_me_title{
+  font-size: 60px;
+}
+
+.bold_text{
+  width: 100%;
+  z-index: 100;
+  font-size: 70px;
+   width: 60%;
+  top: 46%;
+  left: 50%;
+      text-shadow: 5px 5px 0 #eebf3a;
+
+}
+
+.thin_text{
+  z-index: 100;
+    font-size: 24px;
+    position: absolute;
+    top: 0;
+    font-family: 'Poppins', sans-serif;
+    color: #ef4b6f;
+      top:60%;
+      line-height: 25px;
+  left: 55%;
+  width: 70%;
+
+
+}
+
+#navbar {
+  overflow: hidden;
+  background-color: #f8f6f2;
+  height: 10%;
+  width: 100vw;
+}
+
+#navbar a {
+
+  font-size: 25px;
+  padding:0px;
+  padding-top: 5px;
+    padding-bottom: 5px;
+
+      margin-right: 0px;
+      margin-left:10px;
+}
+
+.projectTitle{
+        font-size: 20px;
+          top: 18%;
+  left: 50%;
+  line-height: 30px;
+
+}
+
+.text{
+  margin: 10%;
+  font-size: 20px;
+
+}
+
+.textBlockDescription{
+  height: auto;
+  width: 100vw;
+  background: #f8f6f2;
+  font-family: 'Poppins', sans-serif;
+    color: #4a4848;
+
+  
+
+}
+
+}
+
+@media only screen and (max-width: 325px) {
+  .bold_text{
+  width: 100%;
+  z-index: 100;
+  font-size: 55px;
+   width: 60%;
+  top: 42%;
+  left: 50%;
+      text-shadow: 5px 5px 0 #eebf3a;
+
+}
+
+.projectTitle{
+        font-size: 20px;
+          top: 23%;
+  left: 50%;
+  line-height: 30px;
+
+}
+
+  }
