@@ -93,6 +93,7 @@
   font-size: 80px;
   margin-left: 50px;
   margin-right: 100px;
+  z-index: 100;
 
 
 }
@@ -182,7 +183,7 @@ display: none;
 
 
 .projectTitle{
-  color: white;
+  color:  #f8f6f2;
   font-size: 800%;
   position: absolute;
   top: 50%;
@@ -193,6 +194,7 @@ display: none;
   text-align: center;
   font-family: 'Poppins', sans-serif;
   font-weight: medium;
+
 }
 
 .textBlock{
@@ -217,8 +219,13 @@ display: none;
 
 }
 
+.projectPageHeaderImage{
+  position: relative;
+}
+
 .about_me_title {
-  color: white;
+  z-index: 1;
+  color: #f8f6f2;
   font-size: 300px;
   position: absolute;
   top: 60%;
@@ -233,13 +240,43 @@ display: none;
 
 }
 
+a:link{
+  color: #ef4b6f;
+  text-decoration: none;
+}
+a:visited{
+  color: #787878;
+  text-decoration: none;
+
+}
+a:hover{
+  text-decoration: underline;
+}
+
+a: active{
+    text-decoration: none;
+
+}
 .text{
   margin: 8%;
+
   font-size: 500%;
     font-family: 'Poppins', sans-serif;
 
 
 }
+
+.aboutMeText{
+  font-size: 500%;
+    font-family: 'Poppins', sans-serif;
+      margin-left: 8%;
+  margin-right: 8%;
+  font-weight: medium;
+
+
+
+}
+
 
 /* Page content */
 .content {
@@ -377,7 +414,13 @@ background-color: #f8f6f2;
 
 }
 
-
+.projectTitle{
+  font-size: 70px;
+  line-height: 110px;
+}
+.text{
+  font-size: 40px;
+}
 
 }
 @media only screen and (max-width: 813px) {
@@ -451,6 +494,8 @@ background-color: #f8f6f2;
   left: 50%;
   line-height: 60px;
 
+
+
 }
 
 .text{
@@ -470,6 +515,18 @@ background-color: #f8f6f2;
 
 }
 
+@media only screen and (max-width: 768px) and (max-height: 1024px){
+.projectTitle{
+        font-size: 60px;
+          top: 23%;
+  left: 50%;
+  line-height: 75px;
+
+}
+
+.text{
+  font-size: 35px;
+}
 }
 @media only screen and (max-width: 376px) {
   .title{
@@ -537,7 +594,7 @@ background-color: #f8f6f2;
     padding-bottom: 5px;
 
       margin-right: 0px;
-      margin-left:10px;
+      margin-left:30px;
 }
 
 .projectTitle{
@@ -545,6 +602,7 @@ background-color: #f8f6f2;
           top: 18%;
   left: 50%;
   line-height: 30px;
+
 
 }
 
@@ -584,6 +642,7 @@ background-color: #f8f6f2;
           top: 23%;
   left: 50%;
   line-height: 30px;
+
 
 }
 
