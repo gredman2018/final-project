@@ -255,14 +255,14 @@ a: active{
 .text{
   margin: 8%;
 
-  font-size: 30px%;
-    font-family: 'Poppins', sans-serif;
+  font-size: 25px;
+  font-family: 'Poppins', sans-serif;
 
 
 }
 
 .aboutMeText{
-  font-size: 30px;
+  font-size: 25px;
     font-family: 'Poppins', sans-serif;
       margin-left: 8%;
   margin-right: 8%;
@@ -414,7 +414,7 @@ background-color: #f8f6f2;
   line-height: 110px;
 }
 .text{
-  font-size: 40px;
+  font-size: 25px;
 }
 
 }
@@ -520,7 +520,7 @@ background-color: #f8f6f2;
 }
 
 .text{
-  font-size: 35px;
+  font-size: 25px;
 }
 }
 @media only screen and (max-width: 376px) {
