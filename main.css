@@ -301,7 +301,7 @@ a: active{
 
   }
   .thin_text{
-    font-size: 50px;
+    font-size: 25px;
   }
   }
 
@@ -356,7 +356,7 @@ background-color: #f8f6f2;
 
 .thin_text{
   z-index: 100;
-    font-size: 54px;
+    font-size: 45px;
     position: absolute;
     top: 0;
     font-family: 'Poppins', sans-serif;
@@ -442,10 +442,10 @@ background-color: #f8f6f2;
 .bold_text{
   width: 100%;
   z-index: 100;
-  font-size: 70px;
+  font-size: 100px;
    width: 60%;
   top: 46%;
-  left: 50%;
+  left: 60%;
       text-shadow: 5px 5px 0 #eebf3a;
 
 }
@@ -457,10 +457,10 @@ background-color: #f8f6f2;
     top: 0;
     font-family: 'Poppins', sans-serif;
     color: #ef4b6f;
-      top:60%;
+      top:65%;
       line-height: 25px;
-  left: 55%;
-  width: 70%;
+  left: 50%;
+  width: 40%%;
 
 
 }
