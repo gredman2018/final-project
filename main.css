@@ -1,23 +1,23 @@
-*{
-	margin: 0px;
-	padding: 0px;
-	border: 0px;
-/*	width: 100vw;
+ *{
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+/*  width: 100vw;
 */}
 
 .container{
-	display: flex;
-	flex-direction:row;
-	flex-wrap: wrap;
-	width: 100vw;
+  display: flex;
+  flex-direction:row;
+  flex-wrap: wrap;
+  width: 100vw;
 
 
 }
 .projectBlock{
-	display: flex;
-	object-fit: contain;
-	position: relative;
-	width: 50vw;
+  display: flex;
+  object-fit: contain;
+  position: relative;
+  width: 50vw;
 
 
 }
@@ -47,7 +47,6 @@
   transition: .3s ease;
   background-color: #eebf3a;
   font-weight: bold;
-  z-index: 0;
 
 
 }
@@ -78,7 +77,6 @@
   height: 50%;
   width: 100vw;
   position: sticky;
-  z-index: 1;
 
 }
 
@@ -108,25 +106,25 @@
 
 
 .main_image_container{
-	width: 100vw;
-	height: 100vh;
-	display: flex;
-	flex-direction: row;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
 
 }
 
 .white_half{
-	background-color: #f8f6f2;
-	width: 50vw;
-	display: flex;
-	height: 100vh;
-	flex-direction: column;
+  background-color: #f8f6f2;
+  width: 50vw;
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
 }
 
 .imagery{
-	width: 50vw;
-	height: 100vh;
-	
+  width: 50vw;
+  height: 100vh;
+  
 }
 
 .title_mobile{
@@ -136,15 +134,15 @@ display: none;
 
 
 .bold_text{
-	z-index: 100;
-  	font-size: 100px;
-  	width: 40%;
-  	line-height: 90%;
-  	position: absolute;
-  	font-family: 'Poppins', sans-serif;
-  	font-weight: 800;
-  	color: #ef4b6f;
-  	text-shadow: 5px 5px 0 #eebf3a;
+  z-index: 100;
+    font-size: 100px;
+    width: 40%;
+    line-height: 90%;
+    position: absolute;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    color: #ef4b6f;
+    text-shadow: 5px 5px 0 #eebf3a;
       top: 45%;
   left: 32%;
   -webkit-transform: translate(-50%, -50%);
@@ -156,17 +154,17 @@ display: none;
 }
 
 .thin_text{
-	z-index: 100;
-  	font-size: 30px;
-  	position: absolute;
-  	font-family: 'Poppins', sans-serif;
-  	color: #ef4b6f;
+  z-index: 100;
+    font-size: 30px;
+    position: absolute;
+    font-family: 'Poppins', sans-serif;
+    color: #ef4b6f;
       top:67%;
   left: 25%;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  	width: 25%;
+    width: 25%;
 
 
 }
@@ -393,7 +391,7 @@ background-color: #f8f6f2;
   display: unset;
   visibility: visible;
   color: white;
-  font-size: 40px;
+  font-size: 100px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -533,7 +531,7 @@ background-color: #f8f6f2;
   .title_mobile{
   visibility: visible;
   color: white;
-  font-size: 20px;
+  font-size: 40px;
   position: absolute;
   top: 50%;
   left: 50%;
